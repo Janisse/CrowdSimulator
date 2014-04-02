@@ -4,11 +4,11 @@
     <DeviceManager WandAxis="0" WandHorizontalAxis="0" WandHorizontalAxisScale="1" WandVerticalAxis="1" WandVerticalAxisScale="1" WandButtons="0" WandButton0="0" WandButton1="1" WandButton2="2" WandButton3="3" WandButton4="4" WandButton5="5">
         <Driver Type="vrDriverDirectInput" />
     </DeviceManager>
-    <DisplayManager Fullscreen="0" WindowBorders="0" ShowMouseCursor="1" VSync="0" AntiAliasing="0" ForceHideTaskbar="0" SaveRenderTarget="0">
+    <DisplayManager Fullscreen="1" WindowBorders="0" ShowMouseCursor="1" VSync="1" AntiAliasing="0" ForceHideTaskbar="0" SaveRenderTarget="0">
         <Node3D Name="CenterNode" Parent="VRRootNode" Tracker="0" PositionLocal="0.000000,0.000000,0.000000" OrientationLocal="0.000000,0.000000,0.000000,1.000000" />
         <Node3D Name="HandNode" Tag="Hand" Parent="CenterNode" Tracker="0" PositionLocal="0.000000,0.000000,0.000000" OrientationLocal="0.000000,0.000000,0.000000,1.000000" />
         <Node3D Name="HeadNode" Tag="Head" Parent="CenterNode" Tracker="0" PositionLocal="0.000000,0.000000,0.000000" OrientationLocal="0.000000,0.000000,0.000000,1.000000" />
-        <Camera Name="FrontCamera" Parent="HeadNode" Tracker="0" PositionLocal="0.000000,0.000000,0.000000" VerticalFOV="60" Near="0.1" Far="1000" Screen="FrontScreen" ScreenDistance="1" UseViewportAspectRatio="0" AspectRatio="2" />
+        <Camera Name="FrontCamera" Parent="HeadNode" Tracker="0" PositionLocal="0.000000,0.000000,0.000000" VerticalFOV="60" Near="0.1" Far="1000" Screen="FrontScreen" ScreenDistance="1" UseViewportAspectRatio="0" AspectRatio="1.5" />
         <Camera Name="RightCamera" Parent="HeadNode" Tracker="0" PositionLocal="0.000000,0.000000,0.000000" VerticalFOV="60" Near="0.1" Far="1000" Screen="RightScreen" ScreenDistance="1" UseViewportAspectRatio="0" AspectRatio="1.5" />
         <Camera Name="LeftCamera" Parent="HeadNode" Tracker="0" PositionLocal="0.000000,0.000000,0.000000" VerticalFOV="60" Near="0.1" Far="1000" Screen="LeftScreen" ScreenDistance="1" UseViewportAspectRatio="0" AspectRatio="1.5" />
         <Camera Name="FloorCamera" Parent="HeadNode" Tracker="0" PositionLocal="0.000000,0.000000,0.000000" VerticalFOV="60" Near="0.1" Far="1000" Screen="FloorScreen" ScreenDistance="1" UseViewportAspectRatio="0" AspectRatio="1.5" />
