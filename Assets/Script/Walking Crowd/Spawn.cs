@@ -15,8 +15,10 @@ public class Spawn : MonoBehaviour
 	Vector3 _dimGround = new Vector3(20,20,20);
 
 	// Use this for initialization
-	void Start () {
-	
+	void Start ()
+	{
+	//call function spawn people randomly
+		peopleSpawn();
 	}
 
 	void peopleSpawn()
