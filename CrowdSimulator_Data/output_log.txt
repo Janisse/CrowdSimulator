@@ -1,88 +1,148 @@
 Initialize engine version: 4.3.4f1 (e444f76e01cd)
 GfxDevice: creating device client; threaded=1
-Crash!!!
-SymInit: Symbol-SearchPath: '.;C:\Users\Janisse\Desktop\CrowdSimulator;C:\Users\Janisse\Desktop\CrowdSimulator;C:\Windows;C:\Windows\system32;SRV*C:\websymbols*http://msdl.microsoft.com/download/symbols;', symOptions: 530, UserName: 'Janisse'
-OS-Version: 6.1.7601 (Service Pack 1) 0x300-0x1
-C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator.exe:CrowdSimulator.exe (01000000), size: 11948032 (result: 0), SymType: '-exported-', PDB: 'C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator.exe', fileVersion: 4.3.4.31067
-C:\Windows\SysWOW64\ntdll.dll:ntdll.dll (77D40000), size: 1572864 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SysWOW64\ntdll.dll', fileVersion: 6.1.7601.18247
-C:\Windows\syswow64\kernel32.dll:kernel32.dll (77810000), size: 1114112 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\kernel32.dll', fileVersion: 6.1.7601.18229
-C:\Windows\syswow64\KERNELBASE.dll:KERNELBASE.dll (773D0000), size: 290816 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\KERNELBASE.dll', fileVersion: 6.1.7601.18229
-C:\Windows\syswow64\USER32.dll:USER32.dll (77430000), size: 1048576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\USER32.dll', fileVersion: 6.1.7601.17514
-C:\Windows\syswow64\GDI32.dll:GDI32.dll (75F90000), size: 589824 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\GDI32.dll', fileVersion: 6.1.7601.18275
-C:\Windows\syswow64\LPK.dll:LPK.dll (76F60000), size: 40960 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\LPK.dll', fileVersion: 6.1.7601.18177
-C:\Windows\syswow64\USP10.dll:USP10.dll (77760000), size: 643072 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\USP10.dll', fileVersion: 1.626.7601.18009
-C:\Windows\syswow64\msvcrt.dll:msvcrt.dll (75850000), size: 704512 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\msvcrt.dll', fileVersion: 7.0.7601.17744
-C:\Windows\syswow64\ADVAPI32.dll:ADVAPI32.dll (75A40000), size: 655360 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\ADVAPI32.dll', fileVersion: 6.1.7601.18247
-C:\Windows\SysWOW64\sechost.dll:sechost.dll (75CC0000), size: 102400 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SysWOW64\sechost.dll', fileVersion: 6.1.7600.16385
-C:\Windows\syswow64\RPCRT4.dll:RPCRT4.dll (75B70000), size: 983040 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\RPCRT4.dll', fileVersion: 6.1.7601.18205
-C:\Windows\syswow64\SspiCli.dll:SspiCli.dll (75760000), size: 393216 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\SspiCli.dll', fileVersion: 6.1.7601.18270
-C:\Windows\syswow64\CRYPTBASE.dll:CRYPTBASE.dll (75750000), size: 49152 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\CRYPTBASE.dll', fileVersion: 6.1.7600.16385
-C:\Windows\system32\VERSION.dll:VERSION.dll (75680000), size: 36864 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\VERSION.dll', fileVersion: 6.1.7600.16385
-C:\Windows\syswow64\ole32.dll:ole32.dll (77170000), size: 1425408 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\ole32.dll', fileVersion: 6.1.7601.17514
-C:\Windows\syswow64\SHLWAPI.dll:SHLWAPI.dll (772D0000), size: 356352 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\SHLWAPI.dll', fileVersion: 6.1.7601.17514
-C:\Windows\syswow64\SHELL32.dll:SHELL32.dll (76060000), size: 12886016 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\SHELL32.dll', fileVersion: 6.1.7601.18222
-C:\Windows\system32\OPENGL32.dll:OPENGL32.dll (51B10000), size: 819200 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\OPENGL32.dll', fileVersion: 6.1.7600.16385
-C:\Windows\system32\GLU32.dll:GLU32.dll (5BBB0000), size: 139264 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\GLU32.dll', fileVersion: 6.1.7600.16385
-C:\Windows\system32\DDRAW.dll:DDRAW.dll (511A0000), size: 946176 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\DDRAW.dll', fileVersion: 6.1.7600.16385
-C:\Windows\system32\DCIMAN32.dll:DCIMAN32.dll (5C1B0000), size: 24576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\DCIMAN32.dll', fileVersion: 6.1.7601.18177
-C:\Windows\syswow64\SETUPAPI.dll:SETUPAPI.dll (76D90000), size: 1691648 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\SETUPAPI.dll', fileVersion: 6.1.7601.17514
-C:\Windows\syswow64\CFGMGR32.dll:CFGMGR32.dll (75C90000), size: 159744 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\CFGMGR32.dll', fileVersion: 6.1.7601.17621
-C:\Windows\syswow64\OLEAUT32.dll:OLEAUT32.dll (757C0000), size: 585728 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\OLEAUT32.dll', fileVersion: 6.1.7601.17676
-C:\Windows\syswow64\DEVOBJ.dll:DEVOBJ.dll (77920000), size: 73728 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\DEVOBJ.dll', fileVersion: 6.1.7601.17621
-C:\Windows\system32\dwmapi.dll:dwmapi.dll (6D960000), size: 77824 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dwmapi.dll', fileVersion: 6.1.7600.16385
-C:\Windows\system32\WINMM.dll:WINMM.dll (754D0000), size: 204800 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\WINMM.dll', fileVersion: 6.1.7601.17514
-C:\Windows\syswow64\WS2_32.dll:WS2_32.dll (76020000), size: 217088 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\WS2_32.dll', fileVersion: 6.1.7601.17514
-C:\Windows\syswow64\NSI.dll:NSI.dll (76F70000), size: 24576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\NSI.dll', fileVersion: 6.1.7600.16385
-C:\Windows\syswow64\IMM32.dll:IMM32.dll (75900000), size: 393216 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\IMM32.dll', fileVersion: 6.1.7601.17514
-C:\Windows\syswow64\MSCTF.dll:MSCTF.dll (75970000), size: 835584 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\MSCTF.dll', fileVersion: 6.1.7600.16385
-C:\Windows\system32\DNSAPI.dll:DNSAPI.dll (71660000), size: 278528 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\DNSAPI.dll', fileVersion: 6.1.7601.17570
-C:\Windows\system32\IPHLPAPI.DLL:IPHLPAPI.DLL (73C40000), size: 114688 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\IPHLPAPI.DLL', fileVersion: 6.1.7601.17514
-C:\Windows\system32\WINNSI.DLL:WINNSI.DLL (73C30000), size: 28672 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\WINNSI.DLL', fileVersion: 6.1.7600.16385
-C:\Windows\system32\WINHTTP.dll:WINHTTP.dll (73B60000), size: 360448 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\WINHTTP.dll', fileVersion: 6.1.7601.17514
-C:\Windows\system32\webio.dll:webio.dll (73B10000), size: 323584 (result: 0), SymType: '-nosymbols-', PDB: 'C:\Windows\system32\webio.dll', fileVersion: 6.1.7601.17725
-C:\Windows\system32\HID.DLL:HID.DLL (70840000), size: 36864 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\HID.DLL', fileVersion: 6.1.7600.16385
-C:\Windows\system32\MSACM32.dll:MSACM32.dll (64540000), size: 81920 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\MSACM32.dll', fileVersion: 6.1.7600.16385
-C:\Windows\SysWOW64\nvinit.dll:nvinit.dll (755F0000), size: 167936 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\SysWOW64\nvinit.dll', fileVersion: 9.18.13.3523
-C:\Program Files (x86)\NVIDIA Corporation\CoProcManager\detoured.dll:detoured.dll (0F000000), size: 24576 (result: 0), SymType: '-exported-', PDB: 'C:\Program Files (x86)\NVIDIA Corporation\CoProcManager\detoured.dll'
-C:\Program Files (x86)\NVIDIA Corporation\CoProcManager\nvd3d9wrap.dll:nvd3d9wrap.dll (70660000), size: 159744 (result: 0), SymType: '-exported-', PDB: 'C:\Program Files (x86)\NVIDIA Corporation\CoProcManager\nvd3d9wrap.dll', fileVersion: 9.18.13.3523
-C:\Program Files (x86)\NVIDIA Corporation\CoProcManager\nvdxgiwrap.dll:nvdxgiwrap.dll (705C0000), size: 122880 (result: 0), SymType: '-exported-', PDB: 'C:\Program Files (x86)\NVIDIA Corporation\CoProcManager\nvdxgiwrap.dll', fileVersion: 9.18.13.3523
-C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Mono\mono.dll:mono.dll (10000000), size: 2285568 (result: 0), SymType: '-exported-', PDB: 'C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Mono\mono.dll'
-C:\Windows\syswow64\PSAPI.DLL:PSAPI.DLL (77420000), size: 20480 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\PSAPI.DLL', fileVersion: 6.1.7600.16385
-C:\Windows\system32\MSWSOCK.dll:MSWSOCK.dll (716D0000), size: 245760 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\MSWSOCK.dll', fileVersion: 6.1.7601.18254
-C:\Windows\system32\uxtheme.dll:uxtheme.dll (70960000), size: 524288 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\uxtheme.dll', fileVersion: 6.1.7600.16385
-C:\Users\Janisse\Desktop\CrowdSimulator\d3d9.dll:d3d9.dll (545B0000), size: 249856 (result: 0), SymType: '-exported-', PDB: 'C:\Users\Janisse\Desktop\CrowdSimulator\d3d9.dll', fileVersion: 1.4.0.0
-C:\Windows\system32\MSVCP110.dll:MSVCP110.dll (5BE40000), size: 544768 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\MSVCP110.dll', fileVersion: 11.0.51106.1
-C:\Windows\system32\MSVCR110.dll:MSVCR110.dll (5C390000), size: 876544 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\MSVCR110.dll', fileVersion: 11.0.51106.1
-C:\Windows\system32\d3d9.dll:d3d9.dll (5D950000), size: 1847296 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\d3d9.dll', fileVersion: 6.1.7601.17514
-C:\Windows\system32\d3d8thk.dll:d3d8thk.dll (6F3A0000), size: 24576 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\d3d8thk.dll', fileVersion: 6.1.7600.16385
-C:\Windows\system32\nvumdshim.dll:nvumdshim.dll (61310000), size: 860160 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\nvumdshim.dll', fileVersion: 9.18.13.3523
-C:\Windows\system32\igdumd32.dll:igdumd32.dll (5CEB0000), size: 11128832 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\igdumd32.dll', fileVersion: 9.17.10.2932
-C:\Windows\system32\nvd3dum.dll:nvd3dum.dll (5A6E0000), size: 14688256 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\nvd3dum.dll', fileVersion: 9.18.13.3523
-C:\Windows\syswow64\WINTRUST.dll:WINTRUST.dll (76F30000), size: 188416 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\WINTRUST.dll', fileVersion: 6.1.7601.18205
-C:\Windows\syswow64\CRYPT32.dll:CRYPT32.dll (75E10000), size: 1179648 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\CRYPT32.dll', fileVersion: 6.1.7601.18277
-C:\Windows\syswow64\MSASN1.dll:MSASN1.dll (77530000), size: 49152 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\syswow64\MSASN1.dll', fileVersion: 6.1.7601.17514
-C:\Windows\system32\nvspcap.dll:nvspcap.dll (056E0000), size: 987136 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\nvspcap.dll', fileVersion: 10.11.15.0
-C:\Windows\system32\dbghelp.dll:dbghelp.dll (6F470000), size: 962560 (result: 0), SymType: '-exported-', PDB: 'C:\Windows\system32\dbghelp.dll', fileVersion: 6.1.7601.17514
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.099 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Can't add component 'GUILayer' to FrontCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
 
-========== OUTPUTING STACK TRACE ==================
+Can't add component 'GUILayer' to RightCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
 
-(0x70663FA8) (nvd3d9wrap): (filename not available): initialise + 0x128
-(0x545C0E1A) (d3d9): (filename not available): Direct3DCreate9 + 0x14a
-(0x70663F7C) (nvd3d9wrap): (filename not available): initialise + 0xfc
-(0x013BFCF4) (CrowdSimulator): (filename not available): AnimationEvent::Transfer<SafeBinaryRead> + 0x147564
-(0x013C8473) (CrowdSimulator): (filename not available): AnimationEvent::Transfer<SafeBinaryRead> + 0x14fce3
-(0x010FE6D4) (CrowdSimulator): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0x12f04
-(0x014076F4) (CrowdSimulator): (filename not available): AnimationEvent::Transfer<SafeBinaryRead> + 0x18ef64
-(0x014010F0) (CrowdSimulator): (filename not available): AnimationEvent::Transfer<SafeBinaryRead> + 0x188960
-(0x010FE7E9) (CrowdSimulator): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0x13019
-(0x01199100) (CrowdSimulator): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0xad930
-(0x011E1D64) (CrowdSimulator): (filename not available): Behaviour::Transfer<StreamedBinaryWrite<0> > + 0xf6594
-(0x0142EB28) (CrowdSimulator): (filename not available): AnimationEvent::Transfer<SafeBinaryRead> + 0x1b6398
-(0x01460490) (CrowdSimulator): (filename not available): AnimationEvent::Transfer<SafeBinaryRead> + 0x1e7d00
-(0x7782336A) (kernel32): (filename not available): BaseThreadInitThunk + 0x12
-(0x77D79F72) (ntdll): (filename not available): RtlInitializeExceptionChain + 0x63
-(0x77D79F45) (ntdll): (filename not available): RtlInitializeExceptionChain + 0x36
+Can't add component 'GUILayer' to LeftCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
 
-========== END OF STACKTRACE ===========
+Can't add component 'GUILayer' to FloorCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
 
-**** Crash! ****
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.068 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.104 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.105 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Can't add component 'GUILayer' to FrontCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to RightCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to LeftCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FloorCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FrontCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to RightCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to LeftCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FloorCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FrontCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to RightCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to LeftCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FloorCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
