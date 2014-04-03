@@ -31,7 +31,9 @@ public class moveController : MonoBehaviour {
 			float translationZ = -MiddleVR.VRDeviceMgr.GetJoystick().GetAxisValue(1);
 			//Regle le probleme d'hypersensibilite du controller
 			if((translationX>sensibilite || translationX<-sensibilite) || (translationZ>sensibilite || translationZ<-sensibilite))
-				transform.Translate(new Vector3 (translationX, 0, translationZ) * moveSpeed);
+				transform.rigidbody.AddRelativeForce(new Vector3 (translationX, 0, translationZ) * moveSpeed);
+			else
+				transform.rigidbody.velocity = new Vector3 (transform.rigidbody.velocity.x * 0.5f, transform.rigidbody.velocity.y * 1.1f, transform.rigidbody.velocity.z * 0.5f);
 
 
 			//Jump
@@ -44,6 +46,7 @@ public class moveController : MonoBehaviour {
 		{
 			//Rotation
 			float rotationAxis = Input.GetAxis("Mouse X");
+			Debug.Log(rotationAxis.ToString());
 			//Regle le probleme d'hypersensibilite du controller
 			if(rotationAxis>sensibilite || rotationAxis<-sensibilite)
 				transform.Rotate(new Vector3 (0, rotationAxis, 0) * rotationSpeed);
@@ -53,11 +56,13 @@ public class moveController : MonoBehaviour {
 			float translationZ = Input.GetAxis("Vertical");
 			//Regle le probleme d'hypersensibilite du controller
 			if((translationX>sensibilite || translationX<-sensibilite) || (translationZ>sensibilite || translationZ<-sensibilite))
-				transform.Translate(new Vector3 (translationX, 0, translationZ) * moveSpeed);
+				transform.rigidbody.AddRelativeForce(new Vector3 (translationX, 0, translationZ) * moveSpeed);
+			else
+				transform.rigidbody.velocity = new Vector3 (transform.rigidbody.velocity.x * 0.5f, transform.rigidbody.velocity.y * 1.1f, transform.rigidbody.velocity.z * 0.5f);
 			
 			
 			//Jump
-			if(Input.GetKeyDown(KeyCode.Space) == true)
+			if(MiddleVR.VRDeviceMgr.IsKeyPressed(MiddleVR.VRK_SPACE) == true)
 			{
 				rigidbody.AddForce(Vector3.up * jumpSpeed);
 			}
