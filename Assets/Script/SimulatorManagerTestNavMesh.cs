@@ -29,7 +29,6 @@ public class SimulatorManagerTestNavMesh : MonoBehaviour {
 
 	void AI_Spawn()
 	{
-		nbPeople = 10;
 		
 		//création des gens aléatoirement sur la map
 		for(int i=0 ; i<nbPeople ; ++i)
