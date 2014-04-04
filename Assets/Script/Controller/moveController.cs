@@ -37,7 +37,7 @@ public class moveController : MonoBehaviour {
 				if((translationX>sensibilite || translationX<-sensibilite) || (translationZ>sensibilite || translationZ<-sensibilite))
 					transform.rigidbody.AddRelativeForce(new Vector3 (translationX, 0, translationZ) * moveSpeed);
 				else
-					transform.rigidbody.velocity = new Vector3 (transform.rigidbody.velocity.x * 0.5f, transform.rigidbody.velocity.y * 1.1f, transform.rigidbody.velocity.z * 0.5f);
+					transform.rigidbody.velocity = new Vector3 (transform.rigidbody.velocity.x * 0.5f, transform.rigidbody.velocity.y, transform.rigidbody.velocity.z * 0.5f);
 
 
 				//Jump
@@ -60,9 +60,9 @@ public class moveController : MonoBehaviour {
 				float translationZ = Input.GetAxis("Vertical");
 				//Regle le probleme d'hypersensibilite du controller
 				if((translationX>sensibilite || translationX<-sensibilite) || (translationZ>sensibilite || translationZ<-sensibilite))
-					transform.rigidbody.AddRelativeForce(new Vector3 (translationX, 0, translationZ) * moveSpeed);
+					transform.rigidbody.AddRelativeForce(new Vector3 (translationX, 0, translationZ) * moveSpeed*2);
 				else
-					transform.rigidbody.velocity = new Vector3 (transform.rigidbody.velocity.x * 0.5f, transform.rigidbody.velocity.y * 1.1f, transform.rigidbody.velocity.z * 0.5f);
+					transform.rigidbody.velocity = new Vector3 (transform.rigidbody.velocity.x * 0.5f, transform.rigidbody.velocity.y, transform.rigidbody.velocity.z * 0.5f);
 				
 				
 				//Jump
