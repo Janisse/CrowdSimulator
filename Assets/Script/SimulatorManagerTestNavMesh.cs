@@ -57,14 +57,50 @@ public class SimulatorManagerTestNavMesh : MonoBehaviour {
 			Vector3 _posNewPathNode = pathNodeFirstFloor[(GO.GetComponent("VariablesFirstFloor") as VariablesFirstFloor).curPathNode].position;
 			// le gameObject (humanoide) se dirige vers un nouveau point sur la map
 			GO.GetComponent<NavMeshAgent>().destination = _posNewPathNode;
-			//si un humanoide est pres du point alors direction vers un autre point aléatoire
+
+//			//si il y a des points dans la meme direction que regarde l'humanoide alors go
+//			while(angle < 0.8 && i < 5)
+//			{
+//				//on cherche le vecteur entre l'humanoide et le point suivant
+//				Vector3 A = _posNewPathNode - GO.transform.position;
+//				A.Normalize();
+//				// le vecteur de l'humanoide
+//				Vector3 B = GO.transform.forward;
+//				B.Normalize();
+//				//Produit scalaire des deux (a.x * b.x) + (a.y * b.y) + (a.z * b.z) = angle
+//				angle = Vector3.Dot(A,B);
+//
+//				//va a un point suivant
+//				//int _PathSameDirection = pathNodeFirstFloor.Length - 1;
+//				//Debug.Log ("old path "+(GO.GetComponent("VariablesFirstFloor") as VariablesFirstFloor).curPathNode.ToString()+", new path "+_NewRadomPathNode.ToString());
+//				//(GO.GetComponent("VariablesFirstFloor") as VariablesFirstFloor).curPathNode = _PathSameDirection;
+//
+//				i++;
+//			}
+
+			//si un humanoide est pres du point
 			if(Mathf.Abs(_posNewPathNode.x-GO.transform.position.x)<1 && Mathf.Abs(_posNewPathNode.z-GO.transform.position.z)<1)
 			{
-				int _NewRadomPathNode = Random.Range(1, pathNodeFirstFloor.Length);
-				Debug.Log ("old path "+(GO.GetComponent("VariablesFirstFloor") as VariablesFirstFloor).curPathNode.ToString()+", new path "+_NewRadomPathNode.ToString());
-				(GO.GetComponent("VariablesFirstFloor") as VariablesFirstFloor).curPathNode = _NewRadomPathNode;
-			}
+				float angle = 0;
+				int i = 0;
+				int _RandomPathNode = 0;
+				while(angle < 0.6 && i < pathNodeFirstFloor.Length)
+				{
+					//on cherche un point autre point random
+					_RandomPathNode = Random.Range(1, pathNodeFirstFloor.Length);
 
+					//on cherche le vecteur entre l'humanoide et le point random
+					Vector3 A = (pathNodeFirstFloor.GetValue((long)_RandomPathNode) as Transform).position - GO.transform.position;
+					A.Normalize();
+					// le vecteur de l'humanoide
+					Vector3 B = GO.transform.forward;
+					B.Normalize();
+					//Produit scalaire des deux (a.x * b.x) + (a.y * b.y) + (a.z * b.z) = angle
+					angle = Vector3.Dot(A,B);
+					i++;
+				}
+				(GO.GetComponent("VariablesFirstFloor") as VariablesFirstFloor).curPathNode = _RandomPathNode;
+			}
 		}
 	}
 
