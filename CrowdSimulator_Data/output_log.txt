@@ -7,18 +7,979 @@ Direct3D:
     VRAM:     1990 MB (via DXGI)
     Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
-Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
-Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
-Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.083 seconds
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.074 seconds
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.096 seconds
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Inity Chitld Dize eng
+ine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.088 seconds
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.103 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Can't add component 'GUILayer' to FrontCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to RightCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to LeftCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FloorCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FrontCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to RightCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to LeftCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FloorCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FrontCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to RightCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to LeftCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FloorCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FrontCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to RightCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to LeftCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FloorCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child DomaIn
+nitialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.091 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.097 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.087 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM: ass 1m990y: C:\User(s\Ja isse\Des
+k op CrCopdSimu latSoader=C3owdSipthRTtor_Data\Mepthged\AssemeShy-CSw=1rp.dll ( INTZ=1 RsWs=a NULL=s RESZ=0es )
+lowIoadi=g0C:
+\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.122 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.085 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+Begin Moeror:anageDIARGeFlocadGT 6A0Ms
+ mb  
+ndor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.111 seconds
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.105 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3DBegin [Monomanagim.Rellad9ss1m8l.
+13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:   tformadersem blythRT:\UsativeDaniss1e\ateseShad\CrowdF16m0 INtZ=1 \AWrowdSiLLu1lRESo=0_SlowINTZ=0
+Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.106 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.125 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.124 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngineirect(tDis 
+m ss  e ir harmn: s)
+irecLoad3ng C:\Usersumdshime\Des 9.op\.1owdSimulato23\C]
+  wdRimulator_eadtrer: NVIDIA GeFoEngine .50M 
+ in   Vendor:   NVIDIA
+ t  VRnity     19i0 d Do(viinDXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.129 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.111 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.098 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.105 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.088 seconds
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\DInitialize engine version: 4.3.4f1 (e444f76e01cd)
+efxktevicCr:owrdatingl devr2\CcliedSimthleader_Da
+ta\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.135 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.143 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768I60Hnitialiual: 328e x1080 at  4.3.
+4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Begin MonoManager ReloadAssembly
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForcePGl a50Mor
+    Vendor::  CV:\UA
+e  sV\AJani  se\DesMk tvia\DCGr)
+dSimul  aCtor2\C  owSdaSimulat30r_eatthRT=1aNati\MDepaged\ NativeShadow=1 DFhi6s0 messa=ge As ha0 NULss) 
+ESZ=0 SloaINiZ=0 
+C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulaIor_naia\Managed\Asizmbly-CSnerp.ell inn: Unit.4fChild44omf7n
+6e01cd)
+GfxDevice: creating device client; threaded=t
+form assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.101 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.087 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.123 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.138 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Initialize Platform assemb l4.3.C:\U(e444\Jae01cd)
+esGtop\Crowd:imula creatCro devicewdSienul thrradDa=ta\
+Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.121 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.123 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.096 seconds
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Can't add component 'GUILayer' to FrontCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to RightCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to LeftCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FloorCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Initialize engine version: 4.3.4f1 (e444f76e01cd)
+GfxDevice: creating device client; threaded=1
+Initialize engine version: 4.3.4f1 (e44If7ne0tializ
+e IfxDne vi:e enrsn cve ti.ng d4v.3e4f1cl4ente01cd01ced=f
+1
+Gfvicev:ce:  creaing devicee clilni; ntr; tedh1r
+eaded=1
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Direct3D:
+    Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
+    Renderer: NVIDIA GeForce GT 650M 
+    Vendor:   NVIDIA
+    VRAM:     1990 MB (via DXGI)
+    Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Begin MonoManager ReloadAssembly
+Begin MonoManager ReloadAssembly
+Begin MonoManager ReloadAssembly
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\DePktolPCPowatform assembly: C:\Users\Janisse\Defrtmp\orSsowllemb2::\Cl:otseei\CuaoisSis_DeDts\o_p\DCgrowdwdat\\Mat2\CEng\UnityEn(rthes ml (\saiged\id agiriteyEin 
+ghne.dllldss(t tshsisramgJasin ghCare\ehss\Jaos\s)
+endgedinUaeto\JwdnisJa\dsik\lptCrooiadur\atanagoald\\raUagtdyUEnimgEugelttor_i atttaoaUeitUnihhnEtgDomain
+l 
+li tnoo Unity y ild Domain
+Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.92P latform 
+assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulatfor_Data\mbln:age\d\Ars\saeisse\Deshtap\CrowdSi (this message is harmless)
+\Managoading C:\Users\Janisse\(this message is latrmless)
+dSimuLatoding C:\Users\JaniemslysCe\aerkpopdCrowpiSimulaito 2\iCdrDnmwid 
+0.915 setor_das
+\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\latform assembly: Ctor2\CrowdSimulator_ktop\CrowdSimulator2\CrowdSimulato (this\Managege iidse R_drmNess)
+dll o(ding C:\Users\Ja harmless)
+op\CLoading C:\Users\Jwdismulator_op\C\Managed\Midor2\Crownity3D.dllr_Data\Uanaged\MiddleVR_dotNeity.Child Domainity
+ Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator2\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+<RI> Initializing input.
+- Completed reload, in  0.950 seconds
+- Completed reload, in  0.931 seconds
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+<RI> Initializing input.
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Can't add component 'GUILayer' to FrontCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to RightCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to LeftCamera because such a component is already added to the game object!
+ 
+(FilenamC:an't addacn'ptnend d cILayen' tt  roGtUaIera yecau e s ch a toCamnent ib acraadye sducdh a tho mame obte t!
+ a
+(lireeaae:  Lind: 3 )t
+
+o the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to RightCamera bCcaust s cadd  copopenn in tlreGdU addIdLta the gtme oboent!C
+ a
+meiran bee  Lunee su8ch
+
+ a component is already addedCao'ttadd goaponenbt cGUIa er
+' iolenfaCmme:a beciune s ch ) 
+om
+ponent is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' t 'Flo'rt mara  ecausp suoht n3om'onUIntaisera8toa yRaigehttCatmergameb causeosuceht!
+ c
+(oileoamee:  Lin : l38))
+
+y added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to LeftCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FloorCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+onent 'GUILayer' to RightCamera because such aCcom
+oa
+nentadd pcocaoo'dn e'adUd'GUmyGaaa'en 't'rGoUatmraeFnCt aar e m a nFaeucnetsasauucuee:h cuc on masp3o eai 
+ctomnptaoemndt eaeesaa eaodmda  t ot t e tegdaI bajojb j'ejtcc
+t!!ge j eFc(F!aeaieaae nea:L e ia:me:is83)8
+h
+
+aetC t
+C int
+ d coc ' 
+Cnanndttnaodt' d namdIaorodGo' oemop RntaghttrCa'rtte c
+ aytFos CuahmhethC:g beCraao sroaranumet anl rhi smat l'dtareddeidododcd p da d  etardeogedbny aa!
+jtj! det
+ o(cd(
+gaiar amemdiajeLee:  e Li een 38Cie
+j emCaC!:
+
+  p
+(dC)etn3 'ta)asn
+
+n tCCd'eGetIr  a)dnd  otm pyrnn etfn a'aG ebUnajyaeyae rta
+ c 
+(Liclac aac ecrnne btt  t uts8lorrsm ide i ga  addda leoentgae tea  serjoa ej!  aem
+cd(l
+eol 
+otj:
+ecnaai
+Lnil
+(e ne bl!t 
+!)3 n  C:'iCenlee: a:L
+ i  adb ttcn'dd
+nn'
+G
+'UtIyoaG ean'ty U e' 'o oomGrnomLr)n  t'maa r'caa'yIacurb F e eareaoa reCs noab uneos paaei pnoan u raaasdu airsd ail daailn  atahdgtgelactg!lodmhd
+F ittb!t dtmee: agheebjeedcljeea
+e  !:ee(n 
+iLo e!8the8
+3(im e
+ClaeiLae:n e3:L
+i
+L
+in
+
+Can'
+ 
+
+
+dILine: 38)
+
+FloorCamera because such a component is already added to the gamC od'  aod
+mc
+pmooneetn'tU IGLIyayer
+
+' ter' to Clooamera bebecause cuch a sumponent is alreody added tot ie galreadjy a!
+ 
+(Fil name:  Line:me ob
+j
+ect!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FrontCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FrontCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to RightCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to LeftCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FloorCamera becaCae 't ada comppnentnt  already ad to Righteamera becect!
+ 
+(Fila comm:on Lines 38)
+
+dy added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to LeftCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FloorCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FrontCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to RightCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to LeftCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FloorCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FrontCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to RightCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to LeftCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FloorCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FrontCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to RightCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to LeftCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FloorCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FrontCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to RightCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to LeftCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FloorCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FrontCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to RightCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to LeftCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FloorCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FrontCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to RightCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to LeftCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
+Can't add component 'GUILayer' to FloorCamera because such a component is already added to the game object!
+ 
+(Filename:  Line: 38)
+
 Can't add component 'GUILayer' to FrontCamera because such a component is already added to the game object!
  
 (Filename:  Line: 38)
