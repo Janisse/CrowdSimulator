@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SimulatorManagerTestNavMesh : MonoBehaviour {
+public class SimulatorManagerTestNavMeshEscalator : MonoBehaviour {
 
 	//Spawn
 	public int nbPeople;
@@ -14,6 +14,11 @@ public class SimulatorManagerTestNavMesh : MonoBehaviour {
 	public Transform[] pathNodeFirstFloor;	
 	protected int _speed = 1;
 	int curPathNode;
+
+	public Transform monterHaut;
+	public Transform monterBas;
+	public Transform descendreHaut;
+	public Transform descendreBas;
 	
 	void Awake()
 	{
@@ -58,26 +63,6 @@ public class SimulatorManagerTestNavMesh : MonoBehaviour {
 			// le gameObject (humanoide) se dirige vers un nouveau point sur la map
 			GO.GetComponent<NavMeshAgent>().destination = _posNewPathNode;
 
-//			//si il y a des points dans la meme direction que regarde l'humanoide alors go
-//			while(angle < 0.8 && i < 5)
-//			{
-//				//on cherche le vecteur entre l'humanoide et le point suivant
-//				Vector3 A = _posNewPathNode - GO.transform.position;
-//				A.Normalize();
-//				// le vecteur de l'humanoide
-//				Vector3 B = GO.transform.forward;
-//				B.Normalize();
-//				//Produit scalaire des deux (a.x * b.x) + (a.y * b.y) + (a.z * b.z) = angle
-//				angle = Vector3.Dot(A,B);
-//
-//				//va a un point suivant
-//				//int _PathSameDirection = pathNodeFirstFloor.Length - 1;
-//				//Debug.Log ("old path "+(GO.GetComponent("VariablesFirstFloor") as VariablesFirstFloor).curPathNode.ToString()+", new path "+_NewRadomPathNode.ToString());
-//				//(GO.GetComponent("VariablesFirstFloor") as VariablesFirstFloor).curPathNode = _PathSameDirection;
-//
-//				i++;
-//			}
-
 			//si un humanoide est pres du point
 			if(Mathf.Abs(_posNewPathNode.x-GO.transform.position.x)<1 && Mathf.Abs(_posNewPathNode.z-GO.transform.position.z)<1)
 			{
@@ -101,7 +86,38 @@ public class SimulatorManagerTestNavMesh : MonoBehaviour {
 				}
 				(GO.GetComponent("VariablesFirstFloor") as VariablesFirstFloor).curPathNode = _RandomPathNode;
 			}
+
+			//random pour que seulement une partie des humanoide y aille
+
+			//si on est proche du point de monterBas de l'escalator alors on va dans la fonction
+			if(Mathf.Abs(monterBas.position.x-GO.transform.position.x)<3 && Mathf.Abs(monterBas.position.z-GO.transform.position.z)<3)
+			{
+				GO.transform.position = monterBas.position;
+				if(Random.Range(0, 0.0005) == 0)
+				{
+					GO.transform.position = monterHaut.position;
+					walkSecondFloor();
+				}
+			}
 		}
+	}
+
+	void walkSecondFloor()
+	{
+	}
+	
+	void upStairs()
+	{
+		//aller de monterBas à monterHaut
+
+
+	}
+	
+	void downStairs()
+	{
+		//aller de descendreHaut à descendreBas
+		
+		//si curPathNode est = à descendreBas alors recupère le parcours walkFirstFloor
 	}
 
 	// Update is called once per frame
