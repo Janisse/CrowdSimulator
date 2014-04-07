@@ -9,6 +9,9 @@ public class Humanoide : MonoBehaviour
 	public int curFloor;
 	private int destPathNode;
 	private NavMeshAgent navMesh;
+	private Animator animControl;
+	private Vector3 lastPosition;
+	private float speed;
 
 	//Setter
 	public void setCurFloor(int newCurFloor){curFloor = newCurFloor;}
@@ -16,8 +19,11 @@ public class Humanoide : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+		animControl = GetComponentInChildren<Animator>();
 		//init variable
 		pathNodeTab = new List<Transform>();
+		lastPosition = Vector3.zero;
+		speed = 0f;
 		//init le navMesh
 		navMesh = GetComponent<NavMeshAgent> ();
 		//initialise le tableau des pathNodes ou il peut aller
@@ -33,6 +39,9 @@ public class Humanoide : MonoBehaviour
 		{
 			walk ();
 		}
+
+		//Change l'animation en fonction de la vitesse
+		//animControl.SetFloat("Velocity", 1f);
 	}
 
 	void walk()
