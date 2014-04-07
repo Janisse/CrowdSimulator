@@ -1,128 +1,81 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Humanoide : MonoBehaviour
 {
-	//tableau d'Humanoides
-	public GameObject[] People;
+	//Variable
+	private List<Transform> pathNodeTab;
+	public int curFloor;
+	private int destPathNode;
+	private NavMeshAgent navMesh;
 
-	Transform _transform1;
-	Transform _transform2;
-
-	public Transform[] pathNodeFirstFloor;
-	//public Transform[] pathNodeSecondFloor;
-	
-	protected int _speed = 10;
-	int curPathNode;
-
-	void Awake()
-	{
-		pathNodeFirstFloor[0] = transform;
-	}
+	//Setter
+	public void setCurFloor(int newCurFloor){curFloor = newCurFloor;}
 
 	// Use this for initialization
 	void Start ()
 	{
-		_transform1 = transform;
-		//_transform2 = transform;
-
-		walkFirstFloor();
-	}
-
-	void walkFirstFloor()
-	{
-		People = GameObject.FindGameObjectsWithTag("TagPeople");
-		Vector3 zone = new Vector3();
-		Vector3 movingTo = new Vector3();
-		Vector3 velocity = new Vector3();
-
-		for (int i= 0; i < People.Length; i++)
-		{   
-			if((People[i].GetComponent("VariablesFirstFloor") as VariablesFirstFloor).curPathNode < pathNodeFirstFloor.Length)
-			{
-				zone = pathNodeFirstFloor[(People[i].GetComponent("VariablesFirstFloor") as VariablesFirstFloor).curPathNode].position;
-				movingTo = zone - People[i].transform.position;
-				velocity = People[i].rigidbody.velocity;
-				Debug.Log(velocity.ToString());
-				Debug.Log(zone.ToString());
-
-				if(movingTo.magnitude < 1.5)
-				{
-					
-					// Randomize newPoint
-					int newNode = Random.Range(1, pathNodeFirstFloor.Length);
-					(People[i].GetComponent("VariablesFirstFloor") as VariablesFirstFloor).curPathNode = newNode;
-				}
-				else {velocity = movingTo.normalized*_speed;}
-			}
-			else
-			{
-				(People[i].GetComponent("VariablesFirstFloor") as VariablesFirstFloor).curPathNode = 0;
-			}
-			People[i].rigidbody.velocity = velocity;
-			People[i].transform.LookAt(zone);
-			Debug.Log(velocity.ToString());
-			Debug.Log(zone.ToString());
-			//suivant une probabilité
-			//si le curPathNode est pres de monterBas l'escalator alors fonction UpStairs
-
-		}
-	}
-
-	void walkSecondFloor()
-	{
-//		People = GameObject.FindGameObjectsWithTag("TagPeople") ;
-//		
-//		int i = 0;
-//		
-//		Vector3 zone = pathNode[(People[i].GetComponent("VariablesFirstFloor") as VariablesFirstFloor).curPathNode].position;
-//		Vector3 movingTo = zone - People[i].transform.position;
-//		Vector3 velocity = People[i].rigidbody.velocity;
-//		
-//		for (i= 0; i < People.Length; i++)
-//		{   
-//			if((People[i].GetComponent("VariablesFirstFloor") as VariablesFirstFloor).curPathNode < pathNode.Length)
-//			{
-//				
-//				if(movingTo.magnitude < 1.5)
-//				{
-//					
-//					// Randomize newPoint
-//					int newNode = Random.Range(1, pathNode.Length);
-//					(People[i].GetComponent("VariablesFirstFloor") as VariablesFirstFloor).curPathNode = newNode;
-//				}
-//				else {velocity = movingTo.normalized*_speed;}
-//			}
-//			else
-//			{
-//				(People[i].GetComponent("VariablesFirstFloor") as VariablesFirstFloor).curPathNode = 0;
-//			}
-//			People[i].rigidbody.velocity = velocity;
-//			People[i].rigidbody.AddForce(velocity, ForceMode.Acceleration);
-//			People[i].transform.LookAt(zone);
-//			
-//			
-//			//suivant une probabilité
-//			//si le curPathNode est pres de descendreHaut l'escalator alors fonction DownStairs
-//		}
-	}
-
-	void upStairs()
-	{
-		//aller de monterBas à monterHaut
-
-		//si curPathNode est = à monterHaut alors recupère le parcours walkSecondFloor
-	}
-
-	void downStairs()
-	{
-		//aller de descendreHaut à descendreBas
-
-		//si curPathNode est = à descendreBas alors recupère le parcours walkFirstFloor
+		//init variable
+		pathNodeTab = new List<Transform>();
+		//init le navMesh
+		navMesh = GetComponent<NavMeshAgent> ();
+		//initialise le tableau des pathNodes ou il peut aller
+		getPathNodeTab ();
+		//Generation aléatoire du point de destination lors du spawn et le fait aller à ce point
+		destPathNode = Random.Range (0, pathNodeTab.Count-1);
+		walk ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
+		if(isArrive())
+		{
+			walk ();
+		}
+	}
 
+	void walk()
+	{
+		navMesh.destination = pathNodeTab [destPathNode].position;
+	}
+
+	bool isArrive()
+	{
+		//si l'humanoide est pres du point
+		if(Mathf.Abs(pathNodeTab [destPathNode].position.x-transform.position.x)<1 && Mathf.Abs(pathNodeTab [destPathNode].position.z-transform.position.z)<1)
+		{
+			float angle = 0;
+			int i = 0;
+			int randomPathNode = 0;
+			while(angle < 0.1 && i < pathNodeTab.Count)
+			{
+				//on cherche un point autre point random
+				randomPathNode = Random.Range(1, pathNodeTab.Count);
+				
+				//on cherche le vecteur entre l'humanoide et le point random
+				Vector3 A = pathNodeTab[randomPathNode].position - transform.position;
+				A.Normalize();
+				// le vecteur de l'humanoide
+				Vector3 B = transform.forward;
+				B.Normalize();
+				//Produit scalaire des deux (a.x * b.x) + (a.y * b.y) + (a.z * b.z) = angle
+				angle = Vector3.Dot(A,B);
+				i++;
+			}
+			destPathNode = randomPathNode;
+			return true;
+		}
+		return false;
+	}
+
+	//Recupere tout les pathNodes de l'etage en cours
+	void getPathNodeTab()
+	{
+		GameObject[] pathNodeGO = GameObject.FindGameObjectsWithTag ("pathNodeFloor"+curFloor.ToString());
+		for(int i=0; i<pathNodeGO.Length; i++)
+		{
+			pathNodeTab.Add(pathNodeGO[i].transform);
+		}
 	}
 }
