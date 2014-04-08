@@ -6,12 +6,10 @@ public class Humanoide : MonoBehaviour
 {
 	//Variable
 	private List<Transform> pathNodeTab;
-	private GameObject endEscalator;
 	public int curFloor;
 	private int destPathNode;
 	private NavMeshAgent navMesh;
 	private Animator animControl;
-	private Vector3 lastPosition;
 	private float speed;
 	private bool isOnEscalator;
 
@@ -24,7 +22,6 @@ public class Humanoide : MonoBehaviour
 		animControl = GetComponentInChildren<Animator>();
 		//init variable
 		pathNodeTab = new List<Transform>();
-		lastPosition = Vector3.zero;
 		isOnEscalator = false;
 		speed = 0f;
 		//init le navMesh
@@ -38,27 +35,42 @@ public class Humanoide : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
+		//Si on est hors d'un escalator
 		if(isOnEscalator == false)
 		{
 			if(isArrive())
 			{
-				walk ();
+				if(pathNodeTab[destPathNode].name != "PathNodeLink") //Si il ne s'agit pas d'une entrée d'escalator
+				{
+					newDestination();
+					walk ();
+				}
+				else //On entre dans un escalator
+				{
+					isOnEscalator = true;
+					navMesh.enabled = false;
+				}
 			}
 		}
-		//si on est dans un escalator
-		else
+		else	//Si on est dans un escalator
 		{
-			if(Mathf.Abs(endEscalator.transform.position.x-transform.position.x) < 0.5 && Mathf.Abs(endEscalator.transform.position.z-transform.position.z) < 0.5) //Si on est arrivé et on choisit une autre destination au hasard
+			Vector3 posPathNodeOut = pathNodeTab [destPathNode].GetComponent<Escalator>().pathNodeOut.transform.position;
+			if(Mathf.Abs(posPathNodeOut.x - transform.position.x) < 0.1f && Mathf.Abs(posPathNodeOut.z - transform.position.z) < 0.1f)
 			{
-				Debug.Log("Je suis arrivé !!");
-				isOnEscalator = false;
-				destPathNode = Random.Range (0, pathNodeTab.Count-1);
+				//On actualise l'etage
+				if(posPathNodeOut.y>transform.position.y)
+					curFloor++;
+				else
+					curFloor--;
+				getPathNodeTab();
 				navMesh.enabled = true;
-				walk();
+				isOnEscalator = false;
+				newDestination();
+				walk ();
 			}
-			else //Sinon on continu d'emprunter l'escalator
+			else	//On continu sur l'escalator
 			{
-				transform.Translate((endEscalator.transform.position - transform.position)*Time.deltaTime);
+				transform.Translate(Vector3.Normalize((posPathNodeOut-transform.position))*Time.deltaTime*(pathNodeTab [destPathNode].GetComponent<Escalator>().speed), Space.World);
 			}
 		}
 
@@ -76,50 +88,32 @@ public class Humanoide : MonoBehaviour
 		//si l'humanoide est pres du point
 		if(Mathf.Abs(pathNodeTab [destPathNode].position.x-transform.position.x)<1 && Mathf.Abs(pathNodeTab [destPathNode].position.z-transform.position.z)<1)
 		{
-			//Si il s'agit d'un escalator et qu'on ne l'a pas encore pris
-			if(pathNodeTab [destPathNode].name == "PathNodeLink" && isOnEscalator == false)
-			{
-				//On desactive le navMeshAgent
-				navMesh.enabled = false;
-				//On recupère le point d'arriver de l'escalator
-				endEscalator = pathNodeTab [destPathNode].GetComponent<Escalator>().pathNodeLink;
-				//Si on monte ou on descend
-				if(pathNodeTab [destPathNode].position.y < endEscalator.transform.position.y) //On monte
-					curFloor++;
-				else //On descend
-					curFloor--;
-				//On recupere le tableau de pathNode du nouvel étage
-				getPathNodeTab();
-				//On le fait regarder dans la bonne direction
-				//transform.LookAt(endEscalator.transform.position);
-				//On monte l'escalator
-				isOnEscalator = true;
-			}
-			else	//Sinon on agit normalement
-			{
-				float angle = 0;
-				int i = 0;
-				int randomPathNode = 0;
-				while(angle < 0.1 && i < pathNodeTab.Count)
-				{
-					//on cherche un point autre point random
-					randomPathNode = Random.Range(1, pathNodeTab.Count);
-					
-					//on cherche le vecteur entre l'humanoide et le point random
-					Vector3 A = pathNodeTab[randomPathNode].position - transform.position;
-					A.Normalize();
-					// le vecteur de l'humanoide
-					Vector3 B = transform.forward;
-					B.Normalize();
-					//Produit scalaire des deux (a.x * b.x) + (a.y * b.y) + (a.z * b.z) = angle
-					angle = Vector3.Dot(A,B);
-					i++;
-				}
-				destPathNode = randomPathNode;
-			}
 			return true;
 		}
 		return false;
+	}
+
+	void newDestination()
+	{
+		float angle = 0;
+		int i = 0;
+		int randomPathNode = 0;
+		while(angle < 0.1 && i < pathNodeTab.Count)
+		{
+			//on cherche un point autre point random
+			randomPathNode = Random.Range(0, pathNodeTab.Count-1);
+			
+			//on cherche le vecteur entre l'humanoide et le point random
+			Vector3 A = pathNodeTab[randomPathNode].position - transform.position;
+			A.Normalize();
+			// le vecteur de l'humanoide
+			Vector3 B = transform.forward;
+			B.Normalize();
+			//Produit scalaire des deux (a.x * b.x) + (a.y * b.y) + (a.z * b.z) = angle
+			angle = Vector3.Dot(A,B);
+			i++;
+		}
+		destPathNode = randomPathNode;
 	}
 
 	//Recupere tout les pathNodes de l'etage en cours
@@ -130,11 +124,10 @@ public class Humanoide : MonoBehaviour
 		for(int i=0; i<pathNodeGO.Length; i++)
 		{
 			pathNodeTab.Add(pathNodeGO[i].transform);
+			if(pathNodeGO[i].name == "PathNodeLink")
+			{
+				Debug.Log("link index: "+i.ToString());
+			}
 		}
-	}
-
-	void useEscalator()
-	{
-
 	}
 }
