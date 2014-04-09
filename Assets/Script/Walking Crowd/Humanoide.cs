@@ -10,8 +10,8 @@ public class Humanoide : MonoBehaviour
 	private int destPathNode;
 	private NavMeshAgent navMesh;
 	private Animator animControl;
-	private float speed;
 	private bool isOnEscalator;
+	public static int ID;
 
 	//Setter
 	public void setCurFloor(int newCurFloor){curFloor = newCurFloor;}
@@ -19,11 +19,16 @@ public class Humanoide : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+		//Defini l'ID de l'humanoide
+		if(ID == 0)
+			ID = 1;
+		else
+			ID++;
+
 		animControl = GetComponentInChildren<Animator>();
 		//init variable
 		pathNodeTab = new List<Transform>();
 		isOnEscalator = false;
-		speed = 0f;
 		//init le navMesh
 		navMesh = GetComponent<NavMeshAgent> ();
 		//initialise le tableau des pathNodes ou il peut aller
@@ -31,6 +36,7 @@ public class Humanoide : MonoBehaviour
 		//Generation aléatoire du point de destination lors du spawn et le fait aller à ce point
 		destPathNode = Random.Range (0, pathNodeTab.Count-1);
 		walk ();
+		setState (Random.Range(1,3));
 	}
 	
 	// Update is called once per frame
@@ -49,6 +55,7 @@ public class Humanoide : MonoBehaviour
 				{
 					isOnEscalator = true;
 					navMesh.enabled = false;
+					setState (0);
 				}
 			}
 		}
@@ -67,15 +74,13 @@ public class Humanoide : MonoBehaviour
 				isOnEscalator = false;
 				newDestination();
 				walk ();
+				setState (Random.Range(1,3));
 			}
 			else	//On continu sur l'escalator
 			{
 				transform.Translate(Vector3.Normalize((posPathNodeOut-transform.position))*Time.deltaTime*(pathNodeTab [destPathNode].GetComponent<Escalator>().speed), Space.World);
 			}
 		}
-
-		//Change l'animation en fonction de la vitesse
-		animControl.SetFloat("Velocity", 1f);
 	}
 
 	void walk()
@@ -129,5 +134,13 @@ public class Humanoide : MonoBehaviour
 				Debug.Log("link index: "+i.ToString());
 			}
 		}
+	}
+
+	void setState(int state)
+	{
+		//Change l'animation en fonction de la vitesse
+		animControl.SetInteger("state", state);
+		navMesh.speed = state*2;
+		Debug.Log (state.ToString());
 	}
 }
