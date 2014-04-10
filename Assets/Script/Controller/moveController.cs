@@ -7,8 +7,6 @@ public class moveController : MonoBehaviour {
 	//variables
 	public float rotationSpeed;
 	public float moveSpeed;
-	public bool canJump;
-	public float jumpSpeed;
 	public float sensibilite;
 	public bool isControllerPlugIn;
 	public bool pause;

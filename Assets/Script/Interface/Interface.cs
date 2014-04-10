@@ -5,13 +5,13 @@ using System.Collections;
 public class Interface : MonoBehaviour {
 
 	//Variables
-	private bool interfaceOn;	//true -> interface activé, false -> interface désactivé
-	public float widthInterface;	//Largeur de l'interface
-	public float heightInterface;	//Hauteur de l'interface
-	private Rect windowRect;	//Taille de l'interface
-	private int curPosMenu;	//Position du curseur dans le menu
-	private bool xAxisStep;	//Si le stick est relaché ou non
-	private bool yAxisStep;	//Si le stick est relaché ou non
+	private bool interfaceOn;							//true -> interface activé, false -> interface désactivé
+	public float widthInterface;						//Largeur de l'interface
+	public float heightInterface;						//Hauteur de l'interface
+	private Rect windowRect;							//Taille de l'interface
+	private int curPosMenu;								//Position du curseur dans le menu
+	private bool xAxisStep;								//Si le stick est relaché ou non
+	private bool yAxisStep;								//Si le stick est relaché ou non
 	
 	public System.Collections.SortedList valeurMenu;	//Dictionnaire des options et de leur valeur correspondante
 

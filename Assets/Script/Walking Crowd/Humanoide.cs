@@ -5,106 +5,218 @@ using System.Collections.Generic;
 public class Humanoide : MonoBehaviour
 {
 	//Variable
-	private List<Transform> pathNodeTab;
-	public int curFloor;
-	private int destPathNode;
-	private NavMeshAgent navMesh;
-	private Animator animControl;
-	private bool isOnEscalator;
-	public static int ID;
-	private SharedData state;
+	private List<Transform> pathNodeTab;			//Liste des pathNodes de l'etage actuel
+	public int curFloor;							//Etage actuel de l'humanoide
+	private int destPathNode;						//Index du pathNode vers lequel l'humanoide se dirige
+	private NavMeshAgent navMesh;					//Acces vers le navMeshAgent
+	private Animator animControl;					//Acces vers l'Animator
+	public static int ID;							//ID unique de l'humanoide
+	private SharedData state;						//Variable d'etat de l'humanoide (idle / marche / course)
+
+	private enum interaction{nothing, escalator};	//Declaration des variables d'interaction
+	private interaction interactionState;			//Variable d'interaction
 
 	//Travaux à reprendre plustard
 //	private List<GameObject> Magasins;
 //	private int RandomMagasin;
 //	public GameObject PlanTouchePrefab;
 
-	//Setter
-	public void setCurFloor(int newCurFloor){curFloor = newCurFloor;}
 
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	//Initialisation
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	
 	// Use this for initialization
 	void Start ()
 	{
 		//Defini l'ID de l'humanoide
-		if(ID == 0)
-			ID = 1;
-		else
-			ID++;
+		if(ID == 0) ID = 1;  else ID++;
 
 		//Creation d'une variable d'etat synchronisé
 		state = gameObject.AddComponent<SharedData>();
 		state.createData ("Humanoide" + ID.ToString ());
+
+		//Recupere l'Animator
 		animControl = GetComponentInChildren<Animator>();
-		//init variable
+
+		//Initialise le tableau des pathNodes
 		pathNodeTab = new List<Transform>();
-		isOnEscalator = false;
-		Magasins = new List<GameObject>();
-		//init le navMesh
-		navMesh = GetComponent<NavMeshAgent> ();
-		//initialise le tableau des pathNodes ou il peut aller
 		getPathNodeTab ();
-		//initialise le tableau des magasins qu'ils peuvent regarder
-		getMagasins();
+
+		//Initialise le niveau d'interaction avec l'environement à nothing (aucune interaction à l'instanciation)
+		interactionState = interaction.nothing;
+
+		//Recupere le navMeshAgent
+		navMesh = GetComponent<NavMeshAgent> ();
+
 		//Generation aléatoire du point de destination lors du spawn et le fait aller à ce point
-		destPathNode = Random.Range (0, pathNodeTab.Count-1);
+		destPathNode = Random.Range (0, pathNodeTab.Count);
 		walk ();
+
+		//Initialise son état (marche / course)
 		setState (Random.Range(1,3));
+		
+		//???
+		//Magasins = new List<GameObject>();
+		
+		//Initialise le tableau des magasins qu'ils peuvent regarder
+		//getMagasins();
 	}
-	
+
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	//Setter et getter
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	//Change l'etage actuel de l'humanoide
+	public void setCurFloor(int newCurFloor){curFloor = newCurFloor;}
+
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	//Update
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+
 	// Update is called once per frame
 	void Update () {
-		//Si on est hors d'un escalator
-		if(isOnEscalator == false)
+		switch(interactionState)
 		{
-			if(isArrive())
-			{
-				if(pathNodeTab[destPathNode].name != "PathNodeLink") //Si il ne s'agit pas d'une entrée d'escalator
-				{
-					newDestination();
-					walk ();
-				}
-				else //On entre dans un escalator
-				{
-					isOnEscalator = true;
-					navMesh.enabled = false;
-					setState (0);
-				}
-			}
+		case (interaction.nothing):			//Si aucune interaction
+			updateWalk();
+			break;
+		case (interaction.escalator):		//Si l'humanoide est dans un escalator
+			updateEscalator();
+			break;
 		}
-		else	//Si on est dans un escalator
-		{
-			Vector3 posPathNodeOut = pathNodeTab [destPathNode].GetComponent<Escalator>().pathNodeOut.transform.position;
-			if(Mathf.Abs(posPathNodeOut.x - transform.position.x) < 0.1f && Mathf.Abs(posPathNodeOut.z - transform.position.z) < 0.1f)
-			{
-				//On actualise l'etage
-				if(posPathNodeOut.y>transform.position.y)
-					curFloor++;
-				else
-					curFloor--;
-				getPathNodeTab();
-				navMesh.enabled = true;
-				isOnEscalator = false;
-				newDestination();
-				walk ();
-				setState (Random.Range(1,3));
-			}
-			else	//On continu sur l'escalator
-			{
-				transform.Translate(Vector3.Normalize((posPathNodeOut-transform.position))*Time.deltaTime*(pathNodeTab [destPathNode].GetComponent<Escalator>().speed), Space.World);
-			}
-		}
+
+		//Synchronisation de l'état de l'humanoide entre les clusters
+		updateState ();
+
+		//???
 		//Travaux à reprendre plustard
 		//fonction regarder la vitrine
 		//StartCoroutine(lookAtShowcase());
 		//lookAtShowcase();
-		updateState ();
 	}
 
+
+	//Synchronisation de l'état de l'humanoide entre les clusters
+	void updateState()
+	{
+		animControl.SetInteger("state", (int)state.getData());
+		navMesh.speed = state.getData()*2;
+	}
+
+	//Comportement de l'IA dans l'escalator
+	void updateEscalator()
+	{
+		//On recupère la position de la fin de l'escalator
+		Vector3 posPathNodeOut = pathNodeTab [destPathNode].GetComponent<Escalator>().pathNodeOut.transform.position;
+
+		//Si l'humanoide a atteint la fin de l'escalator
+		if(Mathf.Abs(posPathNodeOut.x - transform.position.x) < 0.1f && Mathf.Abs(posPathNodeOut.z - transform.position.z) < 0.1f)
+		{
+			//On actualise l'etage
+			if(posPathNodeOut.y>transform.position.y) curFloor++;  else curFloor--;
+
+			//On recupere le nouveau tableau des pathNodes
+			getPathNodeTab();
+
+			//On reactive le navMeshAgent
+			navMesh.enabled = true;
+
+			//On met fin a l'interaction avec l'escalator
+			interactionState = interaction.nothing;
+
+			//On choisi une nouvelle direction
+			newDestination();
+
+			//On envoi l'humanoide vers cette destination
+			walk ();
+
+			//On definit si il marche ou il court
+			setState (Random.Range(1,3));
+		}
+
+		//Sinon on continu sur l'escalator
+		else
+		{
+			transform.Translate(Vector3.Normalize((posPathNodeOut-transform.position))*Time.deltaTime*(pathNodeTab [destPathNode].GetComponent<Escalator>().speed), Space.World);
+		}
+	}
+
+	//Comportement de l'IA sans interaction
+	void updateWalk()
+	{
+		//Si on est arrivé à destination
+		if(isArrive())
+		{
+			//Si il ne s'agit pas d'une entrée d'escalator
+			if(pathNodeTab[destPathNode].name != "PathNodeLink")
+			{
+				//On definit une autre destination
+				newDestination();
+				//On l'envoie vers la destination
+				walk ();
+			}
+
+			//Sinon on entre dans un escalator
+			else
+			{
+				//On lui indique qu'il est en interaction avec un escalator
+				interactionState = interaction.escalator;
+				//On desactive son navMesh
+				navMesh.enabled = false;
+				//On passe l'animation en IDLE
+				setState (0);
+			}
+		}
+	}
+
+
+
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	//fonctions
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	//Change l'animation de l'humanoide
+	void setState(int newState)
+	{
+		//L'etat pouvant etre aléatoire, seul le serveur le définit et le transmet aux clients
+		if(MiddleVR.VRClusterMgr.IsServer())
+			state.setData ((float)newState);
+	}
+	
+	//Recupere tout les pathNodes de l'etage en cours
+	void getPathNodeTab()
+	{
+		pathNodeTab.Clear ();
+		GameObject[] pathNodeGO = GameObject.FindGameObjectsWithTag ("pathNodeFloor"+curFloor.ToString());
+		for(int i=0; i<pathNodeGO.Length; i++)
+		{
+			pathNodeTab.Add(pathNodeGO[i].transform);
+		}
+	}
+	
+	//Marche vers la destination de l'humanoide
 	void walk()
 	{
 		navMesh.destination = pathNodeTab [destPathNode].position;
 	}
-
+	
+	//Test pour connaitre si l'humanoide est arrivé a destniation ou non
 	bool isArrive()
 	{
 		//si l'humanoide est pres du point
@@ -115,6 +227,7 @@ public class Humanoide : MonoBehaviour
 		return false;
 	}
 
+	//Definit une nouvelle destination pour l'humanoide (de preference en adéquation avec sa direction)
 	void newDestination()
 	{
 		float angle = 0;
@@ -138,29 +251,19 @@ public class Humanoide : MonoBehaviour
 		destPathNode = randomPathNode;
 	}
 
-	//Recupere tout les pathNodes de l'etage en cours
-	void getPathNodeTab()
-	{
-		pathNodeTab.Clear ();
-		GameObject[] pathNodeGO = GameObject.FindGameObjectsWithTag ("pathNodeFloor"+curFloor.ToString());
-		for(int i=0; i<pathNodeGO.Length; i++)
-		{
-			pathNodeTab.Add(pathNodeGO[i].transform);
-		}
-	}
 
-	void setState(int newState)
-	{
-		if(MiddleVR.VRClusterMgr.IsServer())
-			state.setData ((float)newState);
-	}
 
-	void updateState()
-	{
-		//Change l'animation en fonction de la vitesse
-		animControl.SetInteger("state", (int)state.getData());
-		navMesh.speed = state.getData()*2;
-	}
+
+
+
+
+
+
+
+
+
+
+
 
 //Travaux à reprendre plustard
 //	IEnumerator lookAtShowcase()
