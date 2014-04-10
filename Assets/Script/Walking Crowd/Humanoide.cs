@@ -14,6 +14,11 @@ public class Humanoide : MonoBehaviour
 	public static int ID;
 	private SharedData state;
 
+	//Travaux à reprendre plustard
+//	private List<GameObject> Magasins;
+//	private int RandomMagasin;
+//	public GameObject PlanTouchePrefab;
+
 	//Setter
 	public void setCurFloor(int newCurFloor){curFloor = newCurFloor;}
 
@@ -33,10 +38,13 @@ public class Humanoide : MonoBehaviour
 		//init variable
 		pathNodeTab = new List<Transform>();
 		isOnEscalator = false;
+		Magasins = new List<GameObject>();
 		//init le navMesh
 		navMesh = GetComponent<NavMeshAgent> ();
 		//initialise le tableau des pathNodes ou il peut aller
 		getPathNodeTab ();
+		//initialise le tableau des magasins qu'ils peuvent regarder
+		getMagasins();
 		//Generation aléatoire du point de destination lors du spawn et le fait aller à ce point
 		destPathNode = Random.Range (0, pathNodeTab.Count-1);
 		walk ();
@@ -85,6 +93,10 @@ public class Humanoide : MonoBehaviour
 				transform.Translate(Vector3.Normalize((posPathNodeOut-transform.position))*Time.deltaTime*(pathNodeTab [destPathNode].GetComponent<Escalator>().speed), Space.World);
 			}
 		}
+		//Travaux à reprendre plustard
+		//fonction regarder la vitrine
+		//StartCoroutine(lookAtShowcase());
+		//lookAtShowcase();
 		updateState ();
 	}
 
@@ -149,4 +161,47 @@ public class Humanoide : MonoBehaviour
 		animControl.SetInteger("state", (int)state.getData());
 		navMesh.speed = state.getData()*2;
 	}
+
+//Travaux à reprendre plustard
+//	IEnumerator lookAtShowcase()
+//	{
+//
+//		//on parcours tout les points de la liste de transform Magasins
+//		for(int i =0; i < Magasins.Count; i++)
+//		{
+//			//stop a un nodePath aléatoire mais devant une vitrine avec un timer pendant 5 sec
+////			if(PlanTouchePrefab.GetComponent<PlanTouche>().getIsgrounded() == true)
+////			{
+////				Debug.Log("les humains vont s'arréter FIN DU MOOOOOOOONDE ! ");
+////				setState(0);
+////				yield return new WaitForSeconds(5); 
+////				
+////			}
+//
+//			bool boolean = PlanTouchePrefab.GetComponent<PlanTouche>().getIsgrounded();
+//			//stop a un nodePath aléatoire mais devant une vitrine avec un timer pendant 5 sec
+//			if(boolean == true)
+//			{
+//				//timer += Time.deltaTime;
+//				//if(timer > delay)
+//				Physics.
+//				rigidbody.useGravity = true;
+//				yield return new WaitForSeconds(5); 
+//			}
+//			else
+//				walk ();
+//		}
+//		
+//	}
+
+	//Travaux à reprendre plustard
+	//Recupere tout les pathNodes des magasins en cours
+//	void getMagasins()
+//	{
+//		GameObject[] planeMagGO = GameObject.FindGameObjectsWithTag ("Plane"+curFloor.ToString());
+//		for(int i=0; i<planeMagGO.Length; i++)
+//		{
+//			Magasins.Add(planeMagGO[i]);
+//		}
+//	}
 }
