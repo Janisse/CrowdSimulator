@@ -12,6 +12,7 @@ public class Humanoide : MonoBehaviour
 	private Animator animControl;
 	private bool isOnEscalator;
 	public static int ID;
+	private SharedData state;
 
 	//Setter
 	public void setCurFloor(int newCurFloor){curFloor = newCurFloor;}
@@ -25,6 +26,9 @@ public class Humanoide : MonoBehaviour
 		else
 			ID++;
 
+		//Creation d'une variable d'etat synchronisé
+		state = gameObject.AddComponent<SharedData>();
+		state.createData ("Humanoide" + ID.ToString ());
 		animControl = GetComponentInChildren<Animator>();
 		//init variable
 		pathNodeTab = new List<Transform>();
@@ -81,6 +85,7 @@ public class Humanoide : MonoBehaviour
 				transform.Translate(Vector3.Normalize((posPathNodeOut-transform.position))*Time.deltaTime*(pathNodeTab [destPathNode].GetComponent<Escalator>().speed), Space.World);
 			}
 		}
+		updateState ();
 	}
 
 	void walk()
@@ -129,18 +134,19 @@ public class Humanoide : MonoBehaviour
 		for(int i=0; i<pathNodeGO.Length; i++)
 		{
 			pathNodeTab.Add(pathNodeGO[i].transform);
-			if(pathNodeGO[i].name == "PathNodeLink")
-			{
-				Debug.Log("link index: "+i.ToString());
-			}
 		}
 	}
 
-	void setState(int state)
+	void setState(int newState)
+	{
+		if(MiddleVR.VRClusterMgr.IsServer())
+			state.setData ((float)newState);
+	}
+
+	void updateState()
 	{
 		//Change l'animation en fonction de la vitesse
-		animControl.SetInteger("state", state);
-		navMesh.speed = state*2;
-		Debug.Log (state.ToString());
+		animControl.SetInteger("state", (int)state.getData());
+		navMesh.speed = state.getData()*2;
 	}
 }
