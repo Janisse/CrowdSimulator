@@ -19,7 +19,7 @@ Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\M
 Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
 Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
 Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.079 seconds
+- Completed reload, in  0.068 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
@@ -35,10 +35,6 @@ Can't add component 'GUILayer' to FrontCamera because such a component is alread
  
 (Filename:  Line: 38)
 
-Default GameObject Tag: Player already registered
- 
-(Filename:  Line: 68)
-
 Can't add component 'GUILayer' to RightCamera because such a component is already added to the game object!
  
 (Filename:  Line: 38)
@@ -53,37 +49,24 @@ Can't add component 'GUILayer' to FloorCamera because such a component is alread
 
 Initialize engine version: 4.3.4f1 (e444f76e01cd)
 GfxDevice: creating device client; threaded=1
-Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
 Direct3D:
     Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
     Renderer: NVIDIA GeForce GT 650M 
     Vendor:   NVIDIA
     VRAM:     1990 MB (via DXGI)
     Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
-Default GameObject Tag: Player already registered
- 
-(Filename:  Line: 68)
-
 Initialize engine version: 4.3.4f1 (e444f76e01cd)
 GfxDevice: creating device client; threaded=1
-Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
-Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
-Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
-Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.084 seconds
-<RI> Initializing input.
-<RI> Input initialized.
-desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
 Direct3D:
     Version:  Direct3D 9.0c [nvumdshim.dll 9.18.13.3523]
     Renderer: NVIDIA GeForce GT 650M 
     Vendor:   NVIDIA
     VRAM:     1990 MB (via DXGI)
     Caps:     Shader=30 DepthRT=1 NativeDepth=1 NativeShadow=1 DF16=0 INTZ=1 RAWZ=0 NULL=1 RESZ=0 SlowINTZ=0
+Default GameObject Tag: Player already registered
+ 
+(Filename:  Line: 68)
+
 Begin MonoManager ReloadAssembly
 Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
@@ -97,11 +80,15 @@ Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\M
 Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
 Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
 Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.098 seconds
+- Completed reload, in  0.067 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
 Begin MonoManager ReloadAssembly
+Default GameObject Tag: Player already registered
+ 
+(Filename:  Line: 68)
+
 Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
 Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
@@ -110,7 +97,20 @@ Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\M
 Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
 Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
 Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
-- Completed reload, in  0.101 seconds
+- Completed reload, in  0.096 seconds
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\UnityEngine.dll into Unity Child Domain
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_dotNet.dll into Unity Child Domain
+Platform assembly: C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll (this message is harmless)
+Loading C:\Users\Janisse\Desktop\CrowdSimulator\CrowdSimulator_Data\Managed\MiddleVR_Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.106 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1366x768 60Hz; virtual: 3286x1080 at 0,0

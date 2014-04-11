@@ -13,7 +13,8 @@ public class Humanoide : MonoBehaviour
 	public static int ID;							//ID unique de l'humanoide
 	private SharedData state;						//Variable d'etat de l'humanoide (idle / marche / course)
 
-	private enum interaction{nothing, escalator};	//Declaration des variables d'interaction
+	public enum interaction
+		{nothing, escalator, goToGroupe, inGroupe};	//Declaration des variables d'interaction
 	private interaction interactionState;			//Variable d'interaction
 
 	//Travaux à reprendre plustard
@@ -78,6 +79,17 @@ public class Humanoide : MonoBehaviour
 	//Change l'etage actuel de l'humanoide
 	public void setCurFloor(int newCurFloor){curFloor = newCurFloor;}
 
+	//Recupere l'etage actuel de l'humanoide
+	public int getCurFloor(){return curFloor;}
+
+	//Recupere l'etat d'interaction de l'humanoide
+	public interaction getInteractionState(){return interactionState;}
+
+	//Change l'etat d'interaction de l'humanoide
+	public void setInteractionState(interaction newInteraction){interactionState = newInteraction;}
+
+	//Change manuellement la destination de l'humanoide
+	public void setDestination(Vector3 newDest){navMesh.destination = newDest;}
 
 
 
@@ -96,6 +108,9 @@ public class Humanoide : MonoBehaviour
 			break;
 		case (interaction.escalator):		//Si l'humanoide est dans un escalator
 			updateEscalator();
+			break;
+		case (interaction.goToGroupe):
+			updateGoToGroupe();
 			break;
 		}
 
@@ -126,9 +141,6 @@ public class Humanoide : MonoBehaviour
 		//Si l'humanoide a atteint la fin de l'escalator
 		if(Mathf.Abs(posPathNodeOut.x - transform.position.x) < 0.1f && Mathf.Abs(posPathNodeOut.z - transform.position.z) < 0.1f)
 		{
-			//On actualise l'etage
-			if(posPathNodeOut.y>transform.position.y) curFloor++;  else curFloor--;
-
 			//On recupere le nouveau tableau des pathNodes
 			getPathNodeTab();
 
@@ -152,6 +164,21 @@ public class Humanoide : MonoBehaviour
 		else
 		{
 			transform.Translate(Vector3.Normalize((posPathNodeOut-transform.position))*Time.deltaTime*(pathNodeTab [destPathNode].GetComponent<Escalator>().speed), Space.World);
+		}
+	}
+
+	//Verifie si le joueur a atteind le groupe
+	void updateGoToGroupe()
+	{
+		Debug.Log ("J'y vais !");
+		if(Mathf.Abs(transform.position.x-navMesh.destination.x)<0.5f && Mathf.Abs(transform.position.z-navMesh.destination.z)<0.5f)
+		{
+			Debug.Log("Jsuis dans le groupe chef !");
+			//On passe l'animation en IDLE
+			setState (0);
+
+			//Et on change son interaction
+			interactionState = interaction.inGroupe;
 		}
 	}
 
@@ -179,6 +206,8 @@ public class Humanoide : MonoBehaviour
 				navMesh.enabled = false;
 				//On passe l'animation en IDLE
 				setState (0);
+				//On actualise l'etage
+				if(pathNodeTab [destPathNode].GetComponent<Escalator>().pathNodeOut.transform.position.y>transform.position.y) curFloor++;  else curFloor--;
 			}
 		}
 	}
@@ -211,7 +240,7 @@ public class Humanoide : MonoBehaviour
 	}
 	
 	//Marche vers la destination de l'humanoide
-	void walk()
+	public void walk()
 	{
 		navMesh.destination = pathNodeTab [destPathNode].position;
 	}
@@ -228,7 +257,7 @@ public class Humanoide : MonoBehaviour
 	}
 
 	//Definit une nouvelle destination pour l'humanoide (de preference en adéquation avec sa direction)
-	void newDestination()
+	public void newDestination()
 	{
 		float angle = 0;
 		int i = 0;
